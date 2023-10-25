@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #568B43;
+    position: fixed;
+    width: 100%;
+}
+
+.title {
+    color: #fff;
+}
+
+.title>h1 {
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigation>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.gallery {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery>img {
+    width: 210px;
+    height: 210px;
+    max-width: 210px;
+    max-height: 210px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.atractions {
+    display: flex;
+    height: 100vh;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.atractions>img {
+    height: 100%;
+    width: 750px;
+    max-width: 750px;
+    max-height: 100%;
+}
+
+.atractions-information {
+    padding: 0.5rem;
+    font-size: 1.2em;
+}
+
+.atractions-information>h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1.5rem;
+}
+
+.contato>h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.contato>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.contato>form>input,  .contato>form>textarea{
+    font-size: 1.3em;
+    width: 30%;
+    border-radius: 5px;
+    padding: 0.3rem;
+    border: solid 0.5px black;
+}
+
+@media(max-width: 1545px) {
+    .gallery {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1200px) {
+    .atractions>img {
+        height: 100%;
+        width: 550px;
+        max-width: 550px;
+        max-height: 100%;
+    }
+
+    .zoom>img {
+        left: 400px !important;
+        width: 220px !important;
+        height: 220px !important;
+    }
+}
+
+@media(max-width: 1380px) {
+    .gallery>img {
+        width: 180px;
+        height: 180px;
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .zoom>img {
+        left: 500px !important;
+        width: 220px !important;
+        height: 220px !important;
+    }
+}
+
+@media(max-width: 950px) {
+    .atractions>img {
+        height: 100%;
+        width: 350px;
+        max-width: 350px;
+        max-height: 100%;
+    }
+
+    .title>h1 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .title>p {
+        font-size: 0.8em;
+    }
+
+    .zoom>img {
+        left: 400px !important;
+        width: 220px !important;
+        height: 220px !important;
+    }
+}
+
+@media(max-width: 740px) {
+    .gallery>img {
+        width: 150px;
+        height: 150px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .contato>form>input,  .contato>form>textarea{
+        font-size: 1.3em;
+        width: 50%;
+        border-radius: 5px;
+        padding: 0.3rem;
+        border: solid 0.5px black;
+    }
+
+    .atractions {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .atractions>img {
+        height: 50%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 50%;
+    }
+    
+    .zoom>img {
+        left: 250px !important;
+        width: 220px !important;
+        height: 220px !important;
+    }
+}
+
+@media(max-width: 500px) {
+    .gallery>img {
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .contato>form>input,  .contato>form>textarea{
+        font-size: 1.3em;
+        width: 70%;
+        border-radius: 5px;
+        padding: 0.3rem;
+        border: solid 0.5px black;
+    }
+    
+    .zoom>img {
+        left: 200px !important;
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+@media(max-width: 450px) {
+    .zoom>img {
+        left: 120px !important;
+        width: 150px !important;
+        height: 150px !important;
+        top: 200px !important;
+    }
+}
